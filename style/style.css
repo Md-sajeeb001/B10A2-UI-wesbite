@@ -165,13 +165,13 @@ body{
     justify-content: space-between;
 }
 .img-container img{
-    margin-left: 1.3rem;
+    margin-left:1.11rem;
     border-radius: 50%;
     margin-top: 2.5rem;
 }
 .img-content{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1.8rem;
 }
 .img-tital{
     font-size: 1.11rem;
@@ -181,6 +181,34 @@ body{
     color: var(--secondary-text-color);
     font-size: 1rem;
 }
+/* =================RUN SECTION================= */
+#run-container{
+    background-color: var(--section-color);
+    border-radius: 1rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.run-img-section{
+    max-width: 34%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 2px 6px 8px rgb(0, 0, 0,0.2);
+}
+.run-img-section img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transform: scale(3.8);
+    padding-right: 4rem;
+    padding-top: 3rem;
+}
+.run-section-btn{
+    padding: .6rem 4rem;
+}
+
 /* ==================Small device media quary================== */
 @media screen and (min-width: 390px) and (max-width: 578px) {
     .navber{
@@ -251,7 +279,29 @@ body{
     .habbit-img-container{
         flex-direction: column;
     }
-    
+    /* ================RUN SECTION=============== */
+    #run-container{
+        max-width: 100%;
+        padding: 2rem;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .run-content-section p br{
+        display: none;
+    }
+    .run-img-section{
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    .run-img-section img{
+        transform: scale(1.8);
+    }
+    .btn-section{
+        max-width: 100%;
+    }
+    .run-section-btn{
+        width: 100%;
+    }
 }
 
 
@@ -310,9 +360,7 @@ body{
         text-align: center;
     }
     .habbit-img-container{
-        display: grid;
-        grid-template-columns: repeat(1fr, 1fr);
-        
+        flex-direction: column;
     }
     .img-container img{
         margin-left: 1.3rem;
