@@ -241,6 +241,17 @@ body{
         margin-top: 4rem;
         margin-right: 2rem;
     }
+    /* ===============HABBIT SECITON MEDIA QUARY============== */
+    #main-section{
+        padding: 1rem 4%;
+    }
+    .habbit-section{
+        text-align: center;
+    }
+    .habbit-img-container{
+        flex-direction: column;
+    }
+    
 }
 
 
@@ -291,5 +302,33 @@ body{
         margin-top: 4rem;
         margin-left: 4rem;
     }
-    
+    /* ==================HABBIT SECITON MEDIA QUARY ================= */
+    #main-section{
+        padding: 4rem 6%;
+    }
+    .habbit-section{
+        text-align: center;
+    }
+    .habbit-img-container{
+        display: grid;
+        grid-template-columns: repeat(1fr, 1fr);
+        
+    }
+    .img-container img{
+        margin-left: 1.3rem;
+        border-radius: 50%;
+        margin-top: 2.5rem;
+    }
+    .img-content{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .img-tital{
+        font-size: 1.11rem;
+        font-weight: 500;
+    }
+    .img-content p{
+        color: var(--secondary-text-color);
+        font-size: 1rem;
+    }
 }
