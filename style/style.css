@@ -26,7 +26,7 @@
     margin-top: 1.1rem;
 }
 .h2-tag{
-    font-size: 2.11rem;
+    font-size: 2.22rem;
 }
 body{
     background-color: var(--bg-color);
@@ -153,16 +153,18 @@ body{
 }
 
 /* ===============CHANGE HABBIT SECTION================ */
-#main-section{
+/* #main-section{
     padding: 4rem 10%;
-}
+} */
 .habbit-section{
     text-align: center;
+    padding: 2rem 10%;
 }
 .habbit-img-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10%;
 }
 .img-container img{
     margin-left:1.11rem;
@@ -182,6 +184,9 @@ body{
     font-size: 1rem;
 }
 /* =================RUN SECTION================= */
+.run-mile-container{
+    padding: 0 10%;
+}
 #run-container{
     background-color: var(--section-color);
     border-radius: 1rem;
@@ -207,6 +212,18 @@ body{
 }
 .run-section-btn{
     padding: .6rem 4rem;
+}
+
+/* ==================BMI CALCULATOR SECTION=================== */
+
+.BMI-content-section{
+    padding: 5rem 0 5rem 15%;
+}
+.BMI-tabel-section{
+    max-width: 100%;
+    background-color: var(--section-color);
+    border: 1px solid var(--text-color);
+    height: 500px;
 }
 
 /* ==================Small device media quary================== */
