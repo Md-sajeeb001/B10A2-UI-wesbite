@@ -214,90 +214,66 @@ body{
 .run-section-btn{
     padding: .6rem 4rem;
 }
-
-/* ==================BMI CALCULATOR SECTION=================== */
-.mbi-calculator-content{
-    padding: 6rem 4rem 4rem 25rem;
-    color: var(--text-color);
+/* ===============BMI CALCULATOR SECTION============== */
+.BMI-calculator-content{
+    padding: 4rem 0 4rem 20%;
 }
-
-/* ==============TABEL FROM SECTION START HERE============== */
-
-.from-calculator-section{
-    background-color: var(--section-color);
-    padding: 2.6rem 7%;
+.BMI-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: var(--section-color);
+    padding: 3rem 10%;
 }
-.calculator-items{
-    color: var(--text-color); 
+.table-titel{
+    font-size: 1.58rem;
+    font-weight: 600;
 }
-.table-heading{
-    font-size: 1.7rem;
-    font-weight: 700;
-}
-.tabel-section{
-    margin-top: 2.5rem;
+.table{
     border-collapse: collapse;
+    margin-top: 4.5rem;
 }
-.tabel-section td, th{
-    border: 1px solid var(--secondary-text-color);
-    padding: .8rem 1.5rem;
+.table th, td{
+    border: 1px solid var(--tabel-border-color);
     text-align: left;
+    padding: 1rem 1.85rem;
 }
-.tabel-section th{
-    font-weight: 500;
-}
-.tabel-section td{
-    font-size: .88rem;
-    font-weight: 400;
+.table td{
     color: var(--secondary-text-color);
+    font-size: .88rem;
 }
-/* ==============TABEL FROM SECTION end HERE============== */
-
-/* ==============calculator-items-form SECTION start HERE============== */
-.calculator-items-form{
-    max-width: 100%;
+.BMI-calculator-section{
+    max-width: 50%;
+    margin-top: 3rem;
 }
-#form-section{
+.input-feild{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: repeat(50px, 1fr) ; */
-    gap: .8rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .8rem;
+    margin-top: 2rem;
 }
-#form-section input, select{
-    padding: .98rem 1.2rem;
-    border-radius: .8rem;
-    border: none;
-    background-color: var(--BMI-box-color);
-    color: var(--BMI-text-color);
-    font-size: 1.1rem;
-    font-weight: 400;
-    outline: none;
-}
-#Age-input{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-#select-section{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-#down-option{
+#last-option{
     grid-column: 1/-1;
     grid-row: 3/4;
 }
+.input-feild input,select{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: .8rem;
+    background-color: var(--BMI-box-color);
+    color: var(--BMI-text-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
 .clac-btn{
-    margin-top: -2rem;
     padding: .6rem 3rem;
 }
-
 /* ==================MEET TEAM SECTION================== */
 
 .meet-team-content{
     text-align: center;
-    padding-top: 3rem;
+    padding: 5rem 0 2rem 0;
 }
 .meet-team-img{
     display: grid;
@@ -488,43 +464,31 @@ body{
         padding: 0 4%;
     }
     /* ===============BMI CALCULATOR SECTION================ */
-    .from-calculator-section{
-        padding: 2rem 6%;
-        flex-direction: column;
+    .BMI-calculator-content{
+        padding: 4rem 0 2rem 5.5%;
     }
-    .table-heading{
-        font-size: 1.55rem;
-        font-weight: 600;
+    .BMI-container{
+        border-radius: .5rem;
     }
-    .mbi-calculator-content{
-        padding: 3rem 0 2rem 1rem;
-        text-align: center;
+    .BMI-container{
+       flex-direction: column;
+        padding: 1rem 1%;
     }
-    #form-section{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: repeat(auto-fit, minmax(40px, 1fr)) ;
-    }
-    #form-section input, select{
-        padding: .8rem 1.2rem;
-        max-width: 80%;
-    }
-    #Age-input{
-        grid-column: 1/1;
-        grid-row: 2/1;
-    }
-    #select-section{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    #down-option{
-        grid-column: 1/-1;
-        grid-row: 3/3;
-    }
-    .calculator-items-form{
-        margin-top: 3.5rem;
+    .BMI-calculator-section{
         max-width: 100%;
+        margin-top: 1.88rem;
+        padding: 1.3rem;
     }
+    .table{
+        margin-top: 2rem;
+    }
+    .input-feild input, select{
+        width: 100%;
+    }
+    .clac-btn{
+        margin-top: -1.58rem;
+    }
+    
     /* ===============MEET TEAM SECTION================== */
     .meet-team-img{
         grid-template-columns: 1fr;
@@ -539,111 +503,12 @@ body{
         flex-direction: column;
     }
     .footer-wraper{
-        padding: 3.8rem 4% 2rem 5%;
+        padding: 2rem 4% 2rem 5%;
     }
     .first-footer br{
         display: none;
     }
     .second-footer{
         margin-top: 2rem;
-    }
-}
-
-/* ================MEDIAM DEVICE MEDIA QUARY================= */
-@media screen and (min-width: 768px) and (max-width: 992px) { 
-    .navber{
-        padding: 2rem 7%;
-    }
-    .navber  i{
-        display: none;
-    }
-    .header-main-section{
-        flex-direction: column;
-        padding-top: 4rem;
-        padding-left: 8%;
-        padding-right: 12%;
-    }
-    .header-content h1{
-        font-size: 4rem;
-    }
-    .header-content{
-        width: 100%;
-    }
-    .header-content p br{
-        display: none;
-    }
-    .btn{
-        padding: .7rem 3rem;
-    }
-    #transprent-btn{
-        padding: .6rem 2.5rem;
-    }
-    .cart{
-        bottom: 8rem;
-        left: -3rem;
-    }
-    #pos-cart p{
-        font-size: .8rem;
-    }
-    #pos-cart span{
-        font-size: 1.8rem;
-    }
-    .cart2{
-        bottom: 28rem;
-        left: 18rem;
-    }
-    .header-img img{
-        margin-top: 4rem;
-        margin-left: 4rem;
-    }
-    /* ==================HABBIT SECITON MEDIA QUARY ================= */
-    #main-section{
-        padding: 4rem 6%;
-    }
-    .habbit-section{
-        text-align: center;
-    }
-    .habbit-img-container{
-        flex-direction: column;
-    }
-    .img-container img{
-        margin-left: 1.3rem;
-        border-radius: 50%;
-        margin-top: 2.5rem;
-    }
-    .img-content{
-        text-align: center;
-        margin-top: 2rem;
-    }
-    .img-tital{
-        font-size: 1.11rem;
-        font-weight: 500;
-    }
-    .img-content p{
-        color: var(--secondary-text-color);
-        font-size: 1rem;
-    }
-    /* ===============BMI CALCULATOR SECTION================ */
-    .mbi-calculator-content{
-        width: 100%;
-        padding: 2rem;
-        text-align: center;
-    }
-    .mbi-calculator-content br{
-        display: none;
-    }
-    .calculator-items-form{
-        margin-top: 2rem;
-    }
-    .from-calculator-section{
-        width: 100%;
-        padding: 2rem;
-        flex-direction: column;
-    }
-    #form-section input, select{
-        width: 100%;
-    }
-    #form-section input{
-        color: var(--BMI-text-color);
     }
 }
