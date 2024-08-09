@@ -256,11 +256,13 @@ body{
 /* ==============TABEL FROM SECTION end HERE============== */
 
 /* ==============calculator-items-form SECTION start HERE============== */
-
+.calculator-items-form{
+    max-width: 100%;
+}
 #form-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(70px, 1fr) ;
+    /* grid-template-rows: repeat(50px, 1fr) ; */
     gap: .8rem;
     margin: 2rem 0;
 }
@@ -295,13 +297,11 @@ body{
 
 .meet-team-content{
     text-align: center;
-    /* padding: 3rem 0; */
     padding-top: 3rem;
 }
 .meet-team-img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr, 1fr;
     grid-gap: 1.11rem;
     background-color: var(--section-color);
     margin: 0 10%;
@@ -326,7 +326,7 @@ body{
 }
 .meet-team-img-titel{
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 1.1rem;
     left: 1.5rem;
 }
 #img-set{
@@ -444,7 +444,51 @@ body{
         padding: 0 4%;
     }
     /* ===============BMI CALCULATOR SECTION================ */
-    
+    .from-calculator-section{
+        padding: 2rem 6%;
+        flex-direction: column;
+    }
+    .table-heading{
+        font-size: 1.55rem;
+        font-weight: 600;
+    }
+    .mbi-calculator-content{
+        padding: 3rem 0 2rem 1rem;
+        text-align: center;
+    }
+    #form-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(auto-fit, minmax(40px, 1fr)) ;
+    }
+    #form-section input, select{
+        padding: .8rem 1.2rem;
+        max-width: 80%;
+    }
+    #Age-input{
+        grid-column: 1/1;
+        grid-row: 2/1;
+    }
+    #select-section{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #down-option{
+        grid-column: 1/-1;
+        grid-row: 3/3;
+    }
+    .calculator-items-form{
+        margin-top: 3.5rem;
+        max-width: 100%;
+    }
+    /* ===============MEET TEAM SECTION================== */
+    .meet-team-img{
+        grid-template-columns: 1fr;
+        margin: 3rem 2%;
+    }
+    #img-set{
+        display: none;
+    }
 }
 
 /* ================MEDIAM DEVICE MEDIA QUARY================= */
