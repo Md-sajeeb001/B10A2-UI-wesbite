@@ -33,48 +33,49 @@ body{
     background-color: var(--bg-color);
     color: var(--text-color);
 }
-
 /* ================NAVBER SECITON================ */
 #header-section{
-    background-image: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(to bottom, #211f20 0%,#292828 50%,#131212 100%, ), radial-gradient(circel at center, #292828 0%,#292828 50%,transparent 50%);
 }
 .navber{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.8rem 10%;
+    padding: 4rem 8% 3rem 10%;
 }
 .logo{
     color: var(--logo-color);
-    font-size: 2rem;
+    font-size: 2.52rem;
     font-weight: bold;
-    cursor: pointer;
 }
 .navber ul{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 3rem;
+    gap: .8rem;
+    border: 1px solid var(--tabel-border-color);
+    padding: .15rem;
+    border-radius: 1.8rem;
+}
+.navber ul li {
+    padding: .5rem 1.5rem;
+    border-radius: 1.8rem;
+    cursor: pointer;    
 }
 .navber ul li a{
     color: var(--text-color);
-    font-weight: 500;
-    padding: .5rem 1.21rem;
-    border-radius: 2rem;
-    margin-right: -1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
 }
-.navber ul li i{
-    font-size: 1.8rem;
+.navber #hidden-bar{
     display: none;
 }
-.tab-link{
-    border: 1px solid var(--BMI-box-color);
-    padding: .8rem .5rem;
-    border-radius: 2rem;
+#hidden-bar i{
+    font-size: 2rem;
 }
-.active a{
+.active-color{
     background-color: var(--logo-color);
 }
-
 /* =================HEADER CONTENT SECTION================= */
 .header-main-section{
     display: flex;
@@ -93,7 +94,7 @@ body{
     letter-spacing: 5px;
 }
 .btn{
-    padding: .6rem 1.6rem;
+    padding: .6rem 2.65rem;
     background-color: var(--logo-color);
     border: none;
     border-radius: 2rem;
@@ -106,7 +107,7 @@ body{
 #transprent-btn{
     background:transparent;
     border: 2px solid var(--text-color);
-    padding: .5rem 1.6rem;
+    padding: .5rem 2.6rem;
     margin-left: 1rem;
 }
 
@@ -364,17 +365,26 @@ body{
 /* ==================Small device media quary================== */
 @media screen and (min-width: 390px) and (max-width: 578px) {
     .navber{
-        padding: 2rem 7%;
+        padding: 3rem 4% 2rem 6.5%;
+    }
+    .navber ul li{
+        display: none;
+    }
+    .navber #hidden-bar{
+        display: block;
+        box-shadow: 1px 2px 5px rgb(0, 0, 0,0.5);
     }
     .navber ul{
-       display: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: .8rem;
+        border: none;
+        padding: .15rem;
+        border-radius: 1.8rem;
     }
-    .navber ul li i{
-        font-size: 1.8rem;
-        display: block;
-    }
-    .navber i{
-        display: block;
+    .club-hidden{
+        display: none;
     }
     .header-main-section{
         flex-direction: column;
@@ -398,7 +408,7 @@ body{
         display: none;
     }
     .btn{
-        padding: .7rem 2.6rem;
+        padding: .7rem 2.88rem;
     }
     #transprent-btn{
         padding: .6rem 1.4rem;
